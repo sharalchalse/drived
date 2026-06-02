@@ -75,8 +75,8 @@ export default function ContactForm() {
             </div>
             <h3 className="font-semibold text-black mb-2">Phone</h3>
             <p className="text-gray-600">
-              <a href="tel:+1-555-123-4567" className="hover:text-yellow-400 transition-colors">
-                +1 (555) 123-4567
+              <a href="tel:+918169891400" className="hover:text-yellow-400 transition-colors">
+                +918169891400
               </a>
             </p>
           </motion.div>
@@ -97,7 +97,7 @@ export default function ContactForm() {
                 href="mailto:hello@drived.com"
                 className="hover:text-yellow-400 transition-colors"
               >
-                hello@drived.com
+                https://drived-bice.vercel.app/
               </a>
             </p>
           </motion.div>
@@ -113,7 +113,16 @@ export default function ContactForm() {
               <MapPin className="text-yellow-400" size={24} />
             </div>
             <h3 className="font-semibold text-black mb-2">Location</h3>
-            <p className="text-gray-600">Downtown Metro Area</p>
+            <p className="text-gray-600">
+               <a
+                href=" https://www.google.com/maps/place/DrivEd+-+Personal+Driving+Instructor+and+Consultant/@18.5695258,73.7343022,14z/data=!4m10!1m2!2m1!1sdrive+ed!3m6!1s0x3bc2b951d55d1a6d:0xb7d29bf28c263cda!8m2!3d18.5695258!4d73.7703511!15sCghkcml2ZSBlZFoKIghkcml2ZSBlZJIBDmRyaXZpbmdfc2Nob29s4AEA!16s%2Fg%2F11rhq33n9w?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                Click to load google maps
+              </a>
+            </p>
+            
+
           </motion.div>
         </div>
 
