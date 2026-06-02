@@ -6,31 +6,30 @@ import { Star } from 'lucide-react';
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
+      name: 'Ambika Pandey',
       role: 'New Driver',
       quote:
-        'I was incredibly anxious about driving, but the patient approach made all the difference. Within weeks, I went from terrified to confident behind the wheel!',
+        'Legit one of the best driving instructors I’ve come across. He has genuinely taught me the basics of a bike, be it riding or the engineering behind it - purely because of his passion for the field. He takes the time to explain why things work the way they do, which made learning interesting rather than overwhelming. Not once did he mansplain anything to me, nor did he ever make me feel like a fool for not knowing something - literally every question I asked was met with patience and respect.',
       rating: 5,
     },
     {
-      name: 'Michael Chen',
+      name: 'Eswar Murty',
       role: 'Student',
       quote:
-        'The personalized lessons were exactly what I needed. The instructor adapted to my pace and always made me feel comfortable pushing boundaries safely.',
+        'I had a great learning experience with Snehal on my car, He explains concepts, corrects mistakes and ensures you understand and most importantly he built my confidence on the road, especially in real traffic and other situations. He is very supportive. I would highly recommend him to anyone looking for a skilled and professional driving instructor.',
       rating: 5,
     },
     {
-      name: 'Emma Williams',
-      role: 'Working Professional',
+      name: 'Arati Kulkarni',
+      role: 'Student',
       quote:
-        'The flexible scheduling was perfect for my busy life. I learned real-world driving skills, not just test-passing techniques. Highly recommend DriveEd!',
+        'I had a great learning experience with Snehal! He was extremely calm, patient, and thorough throughout the entire process. Always on time and very professional. He took the time to explain every detail — from the ins and outs of the car to handling complex driving situations confidently. His focus and clear explanations made me feel comfortable and well-prepared for real-world driving. Highly recommend Snehal if you’re looking for a reliable and experienced instructor!',
       rating: 5,
     },
     {
-      name: 'James Rodriguez',
-      role: 'Adult Learner',
-      quote:
-        'I learned to drive later in life and was worried about keeping up. The instructors were so patient and encouraging. I passed my test first try!',
+      name: 'Ajinkya Gaikwad',
+      role: 'Student',
+      quote:'I found Snehal through Google for personal driving coaching, and it turned out to be the best decision. He is extremely professional and always punctual. Within just 2–3 sessions, he helped me build confidence behind the wheel. After completing all the sessions, I started driving in my neighbourhood, and now I comfortably use my car for daily commuting as well as long drives.',
       rating: 5,
     },
   ];
