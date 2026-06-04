@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
 
   const whatsappNumber = '+918169891400'; // Replace with your actual WhatsApp number
-  const whatsappMessage = 'Hi This is a test message from -sharal! I would like to know more about DriveEd driving lessons.';
+  const whatsappMessage = 'Hi , I would like to know more about DriveEd driving lessons.';
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(
     whatsappMessage
   )}`;
