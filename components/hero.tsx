@@ -1,13 +1,14 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
-import { useState } from 'react';
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { useState } from "react";
 
-const whatsappNumber = '+918169891400'; // Replace with your actual WhatsApp number
-const whatsappMessage = 'Hi,I would like to know more about DriveEd driving lessons.';
-const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(
-  whatsappMessage
+const whatsappNumber = "+918169891400"; // Replace with your actual WhatsApp number
+const whatsappMessage =
+  "Hi,I would like to know more about DriveEd driving lessons.";
+const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+  whatsappMessage,
 )}`;
 
 export default function Hero() {
@@ -28,8 +29,12 @@ export default function Hero() {
           className="mb-6"
         >
           <div className="flex items-center justify-center gap-2 mb-8">
-            <span className="text-5xl md:text-7xl font-bold text-black">Drive</span>
-            <span className="text-5xl md:text-7xl font-bold text-yellow-400">Ed</span>
+            <span className="text-5xl md:text-7xl font-bold text-black">
+              Drive
+            </span>
+            <span className="text-5xl md:text-7xl font-bold text-yellow-400">
+              Ed
+            </span>
           </div>
         </motion.div>
 
@@ -48,7 +53,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
         >
-          Get personalized driving lessons in your own car with patient, professional instructors. Build confidence on real roads with flexible scheduling tailored to your pace.
+          Get personalized driving lessons in your own car with patient,
+          professional instructors. Build confidence on real roads with flexible
+          scheduling tailored to your pace.
         </motion.p>
 
         <motion.div
@@ -57,17 +64,16 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
-       <motion.a
-        href={whatsappLink}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-        className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
-      ></motion.a>
-          <button  className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-all hover:shadow-lg flex items-center gap-2 w-full sm:w-auto">
-            Book a Session
-            <ArrowRight size={20} />
-          </button>
+          {/* <button className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-all hover:shadow-lg flex items-center gap-2 w-full sm:w-auto"> */}
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-all hover:shadow-lg flex items-center gap-2 w-full sm:w-auto"
+            >Book a Session <ArrowRight size={20}/></a>
+            {/* Book a Session */}
+            {/* <ArrowRight size={20} /> */}
+          {/* </button> */}
           <button className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition-all w-full sm:w-auto">
             View Programs
           </button>
