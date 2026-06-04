@@ -49,12 +49,8 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
-          {/* <div className="hidden md:flex">
-            <button className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
-              Book a Session
-            </button>
-          </div> */}
-          <a
+          <div className="hidden md:flex">
+             <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -62,6 +58,8 @@ export default function Navbar() {
           >
             Book a Session <ArrowRight size={20} />
           </a>
+          </div>
+         
 
           {/* Mobile Menu Button */}
           <button

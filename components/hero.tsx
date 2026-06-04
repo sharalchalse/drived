@@ -64,16 +64,12 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
-          {/* <button className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-all hover:shadow-lg flex items-center gap-2 w-full sm:w-auto"> */}
             <a
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-all hover:shadow-lg flex items-center gap-2 w-full sm:w-auto"
             >Book a Session <ArrowRight size={20}/></a>
-            {/* Book a Session */}
-            {/* <ArrowRight size={20} /> */}
-          {/* </button> */}
           <button className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition-all w-full sm:w-auto">
             View Programs
           </button>
