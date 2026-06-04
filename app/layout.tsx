@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: 'https://drived.in',
     images:[
       {
-        url: 'drivedlogo.png',
+        url: '/drivedlogo.png',
         width: 1200,
         height: 630,
         alt: 'DriveEd Logo',
