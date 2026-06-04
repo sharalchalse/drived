@@ -23,7 +23,7 @@ export default function Page() {
       <Testimonials />
       <Gallery />
       <FAQ />
-      <ContactForm />
+      {/* <ContactForm /> */} 
       <Footer />
       <WhatsAppButton />
     </main>
