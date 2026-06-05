@@ -70,9 +70,9 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-all hover:shadow-lg flex items-center gap-2 w-full sm:w-auto"
             >Book a Session <ArrowRight size={20}/></a>
-          <button className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition-all w-full sm:w-auto">
+          <a href="#programs" className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition-all w-full sm:w-auto">
             View Programs
-          </button>
+          </a>
         </motion.div>
 
         {/* Trust badges */}
