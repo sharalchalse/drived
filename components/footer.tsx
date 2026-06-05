@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-white">Drive</span>
+              <span className="text-2xl font-bold text-white">Driv</span>
               <span className="text-2xl font-bold text-yellow-400">Ed</span>
             </div>
             <p className="text-gray-400 text-sm">Learn Driving the Right Way.</p>
@@ -87,7 +87,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2024 DriveEd. All rights reserved.</p>
+            <p>&copy; 2024 DrivEd. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link href="#" className="hover:text-yellow-400 transition-colors">
                 Privacy Policy

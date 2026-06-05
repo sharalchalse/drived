@@ -28,9 +28,9 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="mb-6"
         >
-          <div className="flex items-center justify-center gap-2 mb-8">
+          <div className="flex items-center justify-center  mb-8">
             <span className="text-5xl md:text-7xl font-bold text-black">
-              Drive
+              Driv
             </span>
             <span className="text-5xl md:text-7xl font-bold text-yellow-400">
               Ed

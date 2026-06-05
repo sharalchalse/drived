@@ -21,7 +21,7 @@ export default function Programs() {
       ],
     },
     {
-      name: 'Complete DriveEd Learning Program',
+      name: 'Complete DrivEd Learning Program',
       tag: 'Most Popular',
       duration: '12 Sessions',
       featured: true,

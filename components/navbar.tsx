@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="#" className="flex items-center">
-            <span className="text-2xl font-bold text-black">Drive</span>
+            <span className="text-2xl font-bold text-black">Driv</span>
             <span className="text-2xl font-bold text-yellow-400">Ed</span>
           </Link>
 

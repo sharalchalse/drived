@@ -74,7 +74,7 @@ export default function WhyChoose() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">Why Choose DriveEd?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">Why Choose DrivEd?</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             We&apos;re committed to making your driving journey smooth, confident, and successful
           </p>
