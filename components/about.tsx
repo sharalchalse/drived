@@ -81,7 +81,7 @@ export default function About() {
               </p>
             </div>
             <div className="flex  justify-center">
-              <div className="relative w-80 h-82 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative w-70 h-72 rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src="/founder.jpeg"
                   alt="DrivEd Founder"
