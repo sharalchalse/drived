@@ -80,8 +80,8 @@ export default function About() {
                 anxiety-free.
               </p>
             </div>
-            <div className="flex justify-center">
-              <div className="relative w-120 h-125 rounded-xl overflow-hidden shadow-lg">
+            <div className="flex  justify-center">
+              <div className="relative w-80 h-82 rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src="/founder.jpeg"
                   alt="DrivEd Founder"
