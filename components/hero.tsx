@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="mb-6"
         >
-          <div className="flex items-center justify-center  mb-8">
+          <div className="flex items-center justify-center  mb-6 mt-6">
             <span className="text-5xl md:text-7xl font-bold text-black">
               Driv
             </span>
@@ -42,7 +42,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="text-4xl md:text-6xl font-bold text-black mb-6"
+          className="text-4xl md:text-6xl font-bold text-black mb-6 "
         >
           Learn Driving the Right Way.
         </motion.h1>
@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
+          className="text-lg md:text-xl text-gray-600 mb-6 max-w-2xl mx-auto"
         >
           Get personalized driving lessons in your own car with patient,
           professional instructors. Build confidence on real roads with flexible
