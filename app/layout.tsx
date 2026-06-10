@@ -7,11 +7,11 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'DriveEd - Learn Driving the Right Way',
-  description: 'Professional driving lessons with personalized one-on-one instruction. Learn in your own car with flexible scheduling and expert guidance.',
+  title: 'DrivEd - Learn Driving the Right Way',
+  description: 'Professional driving lessons,Learn in your own car with flexible scheduling and expert guidance.',
   // generator: 'v0.app',
   openGraph: {
-    title: 'DriveEd - Learn Driving the Right Way',
+    title: 'DrivEd - Learn Driving the Right Way',
     description: 'Professional driving lessons with personalized instruction in your own car',
     type: 'website',
     url: 'https://drived.in',
