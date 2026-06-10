@@ -11,12 +11,12 @@ export default function FAQ() {
     {
       question: 'Do I need to have a car to take lessons?',
       answer:
-        'No! We provide a fully insured, dual-control vehicle for all lessons. You&apos;re welcome to bring your own car once you&apos;ve completed the basics.',
+        'Yes,Our programs are tailored to teach you driving in your own car',
     },
     {
       question: 'How long does it take to become road test ready?',
       answer:
-        'Most students complete their training in 3-6 months with regular lessons. The timeline depends on your prior experience and how frequently you take lessons.',
+        'Most students finish the training within 30 days. The timeline depends on how much and how frequently student practices.',
     },
     {
       question: 'What if I have severe driving anxiety?',
@@ -24,19 +24,14 @@ export default function FAQ() {
         'Anxiety is something we specialize in addressing! Our patient instructors work with you at your pace, using proven techniques to build confidence gradually.',
     },
     {
-      question: 'Can I choose my instructor?',
-      answer:
-        'Yes! You&apos;ll work with the same instructor throughout your training for consistency and a stronger learning relationship.',
-    },
-    {
       question: 'What areas do you cover for driving lessons?',
       answer:
-        'We operate across the entire metropolitan area, covering urban streets, highways, suburban roads, and all types of driving scenarios.',
+        'We operate across the Pune metropolitan area, covering urban streets, highways, suburban roads , and all types of driving scenarios.',
     },
     {
-      question: 'Do you offer make-up lessons if I need to cancel?',
+      question: 'Can I cancel my scheduled session?',
       answer:
-        'Absolutely! We understand life happens. Cancel with 24 hours notice, and we&apos;ll reschedule without penalty. We&apos;re flexible and student-focused.',
+        'Absolutely! We understand life happens. Let us know 12 hours in advance, and we will reschedule it. We are flexible.',
     },
   ];
 

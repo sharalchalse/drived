@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Variants } from 'framer-motion';
 
 export default function Gallery() {
   const images = [
@@ -31,30 +32,30 @@ export default function Gallery() {
       description: 'Navigating busy intersections, cyclists, and city streets.',
       src: '/Trainingsession2.png',
     },
-    {
-      id: 5,
-      title: 'City Driving',
-      description: 'Mastering urban navigation, busy intersections, and lane control.',
-      src: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      id: 6,
-      title: 'Weather Training',
-      description: 'Developing safe driving techniques in rain, fog, and wet roads.',
-      src: '/weatherTraining.png',
-    },
-    {
-      id: 7,
-      title: 'Confidence Building',
-      description: 'Overcoming driving anxiety with patient, step-by-step guidance.',
-      src: 'https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      id: 8,
-      title: 'Road Test Ready',
-      description: 'Pre-test warmups and mock exams to ensure a first-time pass.',
-      src: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80',
-    },
+    // {
+    //   id: 5,
+    //   title: 'City Driving',
+    //   description: 'Mastering urban navigation, busy intersections, and lane control.',
+    //   src: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80',
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Weather Training',
+    //   description: 'Developing safe driving techniques in rain, fog, and wet roads.',
+    //   src: '/weatherTraining.png',
+    // },
+    // {
+    //   id: 7,
+    //   title: 'Confidence Building',
+    //   description: 'Overcoming driving anxiety with patient, step-by-step guidance.',
+    //   src: 'https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=800&q=80',
+    // },
+    // {
+    //   id: 8,
+    //   title: 'Road Test Ready',
+    //   description: 'Pre-test warmups and mock exams to ensure a first-time pass.',
+    //   src: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80',
+    // },
   ];
 
   const [selectedImage, setSelectedImage] = useState<typeof images[0] | null>(null);
@@ -78,27 +79,34 @@ export default function Gallery() {
     setCurrentIndex(newIndex);
     setSelectedImage(images[newIndex]);
   };
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.08,
-        delayChildren: 0.1,
-      },
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
     },
-  };
+  },
+};
 
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.9, y: 20 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: { type: 'spring', stiffness: 100, damping: 15, duration: 0.5 },
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.9,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 15,
     },
-  };
+  },
+};
 
   return (
     <section className="py-16 md:py-24 bg-white">

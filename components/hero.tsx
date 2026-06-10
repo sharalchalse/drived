@@ -53,8 +53,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl text-gray-600 mb-6 max-w-2xl mx-auto"
         >
-          Get personalized driving lessons in your own car with patient,
-          professional instructors. Build confidence on real roads with flexible
+          Get personalized driving lessons in Pune with your own car. Build confidence on real roads with flexible
           scheduling tailored to your pace.
         </motion.p>
 

@@ -22,7 +22,7 @@ export default function Navbar() {
     { name: "Why DriveEd", href: "#why-choose" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "FAQ", href: "#faq" },
-    { name: "Contact", href: "#contact" },
+    // { name: "Contact", href: "#contact" },
   ];
 
   return (

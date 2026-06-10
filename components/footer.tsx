@@ -34,11 +34,7 @@ export default function Footer() {
                   Testimonials
                 </Link>
               </li>
-              <li>
-                <Link href="#contact" className="hover:text-yellow-400 transition-colors">
-                  Contact
-                </Link>
-              </li>
+        
             </ul>
           </div>
 
@@ -57,7 +53,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+1234567890" className="hover:text-yellow-400 transition-colors">
+                <a href="tel:+918169891400" className="hover:text-yellow-400 transition-colors">
                   Call Us
                 </a>
               </li>
@@ -68,16 +64,16 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://www.instagram.com/the_drived?igsh=bGczMjUzYmFqc3Zo" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://www.instagram.com/the_drived?igsh=bGczMjUzYmFqc3Zo" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://www.instagram.com/the_drived?igsh=bGczMjUzYmFqc3Zo" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://www.linkedin.com/in/snehal-chaudhari/" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -87,7 +83,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2024 DrivEd. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} DrivEd. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link href="#" className="hover:text-yellow-400 transition-colors">
                 Privacy Policy

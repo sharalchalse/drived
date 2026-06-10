@@ -2,36 +2,42 @@
 
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
+const whatsappNumber = "+918169891400"; // Replace with your actual WhatsApp number
+const whatsappMessage1 ="Hi,I would like to know more about Basic Competency Program.";
+const whatsappMessage2 ="Hi,I would like to know more about Complete DrivEd Course program.";
+const whatsappLink1 = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+  whatsappMessage1,
+)}`;
+const whatsappLink2 = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+  whatsappMessage2,
+)}`;
 
 export default function Programs() {
   const programs = [
     {
-      name: 'Hurdle Mastery Program',
+      name: 'Basic Competency Program',
       tag: 'Quick Confidence Builder',
-      duration: '5 Sessions',
+      duration: 'Up to 5 sessions (1 hour each)',
       featured: false,
       features: [
-        'Basic vehicle controls and safety',
-        'City driving basics',
-        'Traffic handling',
+        'Solving specific problems',
         'Parking techniques',
         'Defensive driving intro',
         'Road test preparation',
-        'Confidence building exercises',
       ],
     },
     {
       name: 'Complete DrivEd Learning Program',
       tag: 'Most Popular',
-      duration: '12 Sessions',
+      duration: '10 Sessions (2 hour each)',
       featured: true,
       features: [
         'Comprehensive vehicle mastery',
+        'more sessions to be added if needed',
         'Urban and highway driving',
         'Advanced traffic scenarios',
         'Parking and maneuvering',
         'Defensive driving techniques',
-        'Winter/adverse weather driving',
         'Road test strategies',
         'Confidence and anxiety management',
       ],
@@ -71,8 +77,8 @@ export default function Programs() {
             >
               <div>
                 {program.featured && (
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-yellow-400 text-black px-4 py-1 rounded-full text-sm font-semibold shadow-sm">
+                  <div className="absolute top-3 right-4">
+                    <span className="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-semibold shadow-sm">
                       {program.tag}
                     </span>
                   </div>
@@ -113,15 +119,15 @@ export default function Programs() {
                 </div>
               </div>
 
-              <button
-                className={`w-full py-3.5 rounded-xl font-bold transition-all hover:shadow-lg ${
+              <a
+                href={index==0?whatsappLink1:whatsappLink2}
+                className={`w-full py-3.5 rounded-xl font-bold flex items-center justify-center transition-all hover:shadow-lg ${
                   program.featured
                     ? 'bg-yellow-400 text-black hover:bg-yellow-500 hover:shadow-yellow-400/20'
                     : 'bg-black text-white hover:bg-gray-800 hover:shadow-black/20'
                 }`}
-              >
-                Choose This Program
-              </button>
+              >  Choose This Program
+              </a>
             </motion.div>
           ))}
         </div>

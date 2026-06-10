@@ -6,6 +6,7 @@ import WhyChoose from '@/components/why-choose';
 import Timeline from '@/components/timeline';
 import Testimonials from '@/components/testimonials';
 import Gallery from '@/components/gallery';
+import VideoGallery from '@/components/video-gallery';
 import FAQ from '@/components/faq';
 import ContactForm from '@/components/contact-form';
 import WhatsAppButton from '@/components/whatsapp-button';
@@ -22,6 +23,7 @@ export default function Page() {
       <Timeline />
       <Testimonials />
       <Gallery />
+      <VideoGallery />
       <FAQ />
       {/* <ContactForm /> */} 
       <Footer />

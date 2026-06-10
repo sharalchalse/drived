@@ -27,8 +27,7 @@ export default function About() {
             About DrivEd
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We believe learning to drive should be stress-free, personalized,
-            and focused on building genuine confidence behind the wheel.
+            We believe learning to drive should be stress-free, personalized, and focused on building genuine confidence behind the wheel.DrivEd which stands for Driving Education is for learning to drive in a scientific/structured way. 
           </p>
         </motion.div>
 
@@ -75,9 +74,9 @@ export default function About() {
               </h4>
               <p className="text-gray-600">
                 With over 15 years of professional driving experience and a
-                passion for teaching, our founder started DrivEd with a simple
-                mission: to make driving education accessible, affordable, and
-                anxiety-free.
+                passion for teaching, our founder Snehal Chaudhari started DrivEd with a simple
+                mission: to make driving education accessible and
+                anxiety-free,with a strong emphasis on defensive driving and road safety.
               </p>
             </div>
             <div className="flex  justify-center">
