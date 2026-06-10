@@ -20,10 +20,12 @@ export default function Programs() {
       duration: 'Up to 5 sessions (1 hour each)',
       featured: false,
       features: [
-        'Solving specific problems',
-        'Parking techniques',
+        'Solving specific driving problems',
+        'Personalized sessions based on individual weaknesses',
         'Defensive driving intro',
-        'Road test preparation',
+        'Focused on confidence building',
+        'Parking techniques',
+        'Progress assessment and improvement plan',
       ],
     },
     {
@@ -33,7 +35,7 @@ export default function Programs() {
       featured: true,
       features: [
         'Comprehensive vehicle mastery',
-        'more sessions to be added if needed',
+        'more sessions are added if needed',
         'Urban and highway driving',
         'Advanced traffic scenarios',
         'Parking and maneuvering',
