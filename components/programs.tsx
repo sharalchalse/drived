@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 const whatsappNumber = "+918169891400"; // Replace with your actual WhatsApp number
 const whatsappMessage1 ="Hi,I would like to know more about the Basic Competency Program.";
-const whatsappMessage2 ="Hi,I would like to know more about the Complete DrivEd Course program.";
+const whatsappMessage2 ="Hi,I would like to know more about the Comprehensive program.";
 const whatsappLink1 = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
   whatsappMessage1,
 )}`;
@@ -29,9 +29,9 @@ export default function Programs() {
       ],
     },
     {
-      name: 'Complete DrivEd Learning Program',
+      name: 'Comprehensive Program',
       tag: 'Most Popular',
-      duration: '10 Sessions (2 hour each)',
+      duration: '10 Sessions (up to 2 hour each)',
       featured: true,
       features: [
         'Comprehensive vehicle mastery',

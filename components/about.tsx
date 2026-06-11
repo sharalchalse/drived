@@ -27,7 +27,7 @@ export default function About() {
             About DrivEd
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We believe learning to drive should be stress-free, personalized, and focused on building genuine confidence behind the wheel.DrivEd which stands for Driving Education is for learning to drive in a scientific/structured way. 
+            DrivEd which stands for Driving Education is for learning to drive in a scientific/structured way. 
           </p>
         </motion.div>
 

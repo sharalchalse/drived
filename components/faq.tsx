@@ -11,7 +11,7 @@ export default function FAQ() {
     {
       question: 'Do I need to have a car to take lessons?',
       answer:
-        'Yes,Our programs are tailored to teach you driving in your own car',
+        'Yes, Our programs are tailored to teach you driving in your own car',
     },
     {
       question: 'How long does it take to become road test ready?',

@@ -11,7 +11,7 @@ export default function Gallery() {
     {
       id: 1,
       title: 'Lesson in Progress',
-      description: 'One-on-one expert guidance in a modern dual-control car.',
+      description: 'One-on-one expert guidance.',
       src: '/Learnerimage.png',
     },
     {
@@ -232,7 +232,7 @@ const itemVariants: Variants = {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-zinc-800 flex justify-between items-center text-zinc-500 text-sm">
-                  <span>DriveEd Training Gallery</span>
+                  <span>DrivEd Training Gallery</span>
                   <span className="text-yellow-400/80 font-medium">Confident & Safe</span>
                 </div>
               </div>

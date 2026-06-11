@@ -48,7 +48,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="mailto:contact@drived.com" className="hover:text-yellow-400 transition-colors">
+                <a href="mailto:drivedllp@gmail.com" className="hover:text-yellow-400 transition-colors">
                   Email Us
                 </a>
               </li>

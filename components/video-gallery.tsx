@@ -92,9 +92,9 @@ export default function VideoGallery() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="inline-block px-4 py-1.5 bg-yellow-400/10 border border-yellow-400/20 rounded-full text-yellow-400 text-xs font-semibold uppercase tracking-widest mb-4">
+          {/* <span className="inline-block px-4 py-1.5 bg-yellow-400/10 border border-yellow-400/20 rounded-full text-yellow-400 text-xs font-semibold uppercase tracking-widest mb-4">
             Watch &amp; Learn
-          </span>
+          </span> */}
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Driving in <span className="text-yellow-400">Motion</span>
           </h2>

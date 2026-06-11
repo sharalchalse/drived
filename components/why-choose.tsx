@@ -76,7 +76,10 @@ export default function WhyChoose() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">Why Choose DrivEd?</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
- Defensive Driving is something that is not taught in most places and most people learn about it too late. Our focus at DrivEd is making you a Defensive Driver.
+ We believe learning to drive should be stress-free, personalized, and focused on building genuine confidence behind the wheel.
+          </p>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+Defensive Driving is something that is not taught in most places and most people learn about it too late. Our focus at DrivEd is making you a Defensive Driver.
           </p>
         </motion.div>
 
