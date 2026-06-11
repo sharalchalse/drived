@@ -27,7 +27,7 @@ export default function About() {
             About DrivEd
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            DrivEd which stands for Driving Education is for learning to drive in a scientific/structured way. 
+             <span className="font-semibold text-gray-900">DrivEd </span>which stands for  <span className="font-semibold text-gray-900">Driving Education </span> is for learning to drive in a scientific/structured way. 
           </p>
         </motion.div>
 
