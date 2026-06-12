@@ -220,7 +220,7 @@ export default function VideoGallery() {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-zinc-800 flex justify-between items-center text-zinc-500 text-sm">
-                  <span>Drived Video Gallery</span>
+                  <span>DrivEd Video Gallery</span>
                   <span className="text-yellow-400/80 font-medium">Confident &amp; Safe</span>
                 </div>
               </div>
