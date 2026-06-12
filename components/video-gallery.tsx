@@ -99,7 +99,7 @@ export default function VideoGallery() {
             Driving in <span className="text-yellow-400">Motion</span>
           </h2>
           <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
-            Real lessons, real students — watch the DriveEd experience come to life.
+            Real lessons, real students — watch the DrivEd experience come to life.
           </p>
         </motion.div>
 
@@ -220,7 +220,7 @@ export default function VideoGallery() {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-zinc-800 flex justify-between items-center text-zinc-500 text-sm">
-                  <span>DriveEd Video Gallery</span>
+                  <span>Drived Video Gallery</span>
                   <span className="text-yellow-400/80 font-medium">Confident &amp; Safe</span>
                 </div>
               </div>
