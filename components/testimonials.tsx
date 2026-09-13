@@ -83,6 +83,17 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
+       {/* Google Reviews Button */}
+        <div className="flex justify-center mt-12">
+          <a
+            href="https://share.google/d2oO6w41hISinH8cz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors shadow-sm hover:shadow-md"
+          >
+            See Our Google Reviews
+          </a>
+        </div>
     </section>
   );
 }
