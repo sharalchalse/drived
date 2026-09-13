@@ -23,7 +23,7 @@ export default function Page() {
       <Timeline />
       <Testimonials />
       <Gallery />
-      <VideoGallery />
+      {/* <VideoGallery /> */}
       <FAQ />
       {/* <ContactForm /> */} 
       <Footer />

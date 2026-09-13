@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
-const whatsappNumber = "+918169891400"; // Replace with your actual WhatsApp number
+const whatsappNumber = "+919503420687"; // Replace with your actual WhatsApp number
 const whatsappMessage1 ="Hi, I would like to know more about the Basic Competency Program.";
 const whatsappMessage2 ="Hi, I would like to know more about the Comprehensive program.";
 const whatsappLink1 = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
