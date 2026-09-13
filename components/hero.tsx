@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
-const whatsappNumber = "+919503420687"; // Replace with your actual WhatsApp number
+const whatsappNumber = "+918169891400"; // Replace with your actual WhatsApp number
 const whatsappMessage =
   "Hi,I would like to know more about the driving lessons.";
 const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
