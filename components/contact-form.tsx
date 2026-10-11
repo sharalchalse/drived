@@ -75,8 +75,8 @@ export default function ContactForm() {
             </div>
             <h3 className="font-semibold text-black mb-2">Phone</h3>
             <p className="text-gray-600">
-              <a href="tel:+919503420687" className="hover:text-yellow-400 transition-colors">
-                +919503420687
+              <a href="tel:+918169891400" className="hover:text-yellow-400 transition-colors">
+                +918169891400
               </a>
             </p>
           </motion.div>
