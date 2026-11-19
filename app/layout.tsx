@@ -6,22 +6,33 @@ import './globals.css'
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
+const siteTitle = 'DrivEd - Driving School in Pune | Car Driving Lessons in Your Own Car'
+const siteDescription =
+  'DrivEd is a driving school in Pune offering personalised car driving classes in your own car. Patient instructors, flexible timings, defensive driving and help for nervous learners. Book on WhatsApp.'
+
 export const metadata: Metadata = {
-  title: 'DrivEd - Learn Driving the Right Way',
-  description: 'Professional driving lessons,Learn in your own car with flexible scheduling and expert guidance.',
+  // Base for every relative URL below (canonical, Open Graph image).
+  // www is the main domain: drived.in redirects to it.
+  metadataBase: new URL('https://www.drived.in'),
+  title: siteTitle,
+  description: siteDescription,
+  alternates: {
+    canonical: '/',
+  },
   // generator: 'v0.app',
   openGraph: {
-    title: 'DrivEd - Learn Driving the Right Way',
-    description: 'Professional driving lessons with personalized instruction in your own car',
+    title: siteTitle,
+    description: siteDescription,
     type: 'website',
-    url: 'https://drived.in',
+    url: '/',
+    siteName: 'DrivEd',
+    locale: 'en_IN',
     images:[
       {
         url: '/drivedlogo.png',
-        width: 1200,
-        height: 630,
-        alt: 'DriveEd Logo',
-
+        width: 745,
+        height: 655,
+        alt: 'DrivEd - Driving School in Pune',
       }
     ]
   },

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 
@@ -16,7 +16,7 @@ export default function About() {
   return (
     <section id="about" className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -29,10 +29,10 @@ export default function About() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
              <span className="font-semibold text-gray-900">DrivEd </span>which stands for  <span className="font-semibold text-gray-900">Driving Education </span> is for learning to drive in a scientific/structured way. 
           </p>
-        </motion.div>
+        </m.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -43,7 +43,7 @@ export default function About() {
             </h3>
             <ul className="space-y-4">
               {points.map((point, index) => (
-                <motion.li
+                <m.li
                   key={index}
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -56,12 +56,12 @@ export default function About() {
                     size={24}
                   />
                   <span className="text-gray-700">{point}</span>
-                </motion.li>
+                </m.li>
               ))}
             </ul>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -82,14 +82,15 @@ export default function About() {
             <div className="flex  justify-center">
               <div className="relative w-70 h-72 rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/founder.jpeg"
-                  alt="DrivEd Founder"
+                  src="/founder.webp"
+                  alt="Snehal Chaudhari, founder of DrivEd driving school in Pune"
+                  sizes="288px"
                   fill
                   className="object-cover"
                 />
               </div>
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>

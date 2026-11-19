@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Variants } from 'framer-motion';
@@ -12,25 +12,25 @@ export default function Gallery() {
       id: 1,
       title: 'Lesson in Progress',
       description: 'One-on-one expert guidance.',
-      src: '/Learnerimage.png',
+      src: '/Learnerimage.webp',
     },
     {
       id: 2,
       title: 'Highway Training',
       description: 'Mastering highway merging, lane changes, and safe speeds.',
-      src: '/TrainingSession.png',
+      src: '/TrainingSession.webp',
     },
     {
       id: 3,
       title: 'Parking Practice',
       description: 'Perfecting parallel parking, angle parking, and reverse stalls.',
-      src: '/CarParking.png',
+      src: '/CarParking.webp',
     },
     {
       id: 4,
       title: 'Urban Navigation',
       description: 'Navigating busy intersections, cyclists, and city streets.',
-      src: '/Trainingsession2.png',
+      src: '/Trainingsession2.webp',
     },
     // {
     //   id: 5,
@@ -111,7 +111,7 @@ const itemVariants: Variants = {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -122,9 +122,9 @@ const itemVariants: Variants = {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             See our students progressing through their driving journey
           </p>
-        </motion.div>
+        </m.div>
 
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -132,7 +132,7 @@ const itemVariants: Variants = {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {images.map((image, index) => (
-            <motion.div
+            <m.div
               key={image.id}
               variants={itemVariants}
               onClick={() => handleOpen(index)}
@@ -141,7 +141,7 @@ const itemVariants: Variants = {
               <div className="relative w-full h-full">
                 <Image
                   src={image.src}
-                  alt={image.title}
+                  alt={`${image.title} - driving lesson in Pune`}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
@@ -163,15 +163,15 @@ const itemVariants: Variants = {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
 
       {/* Lightbox Modal */}
       <AnimatePresence>
         {selectedImage && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -197,7 +197,7 @@ const itemVariants: Variants = {
             </button>
 
             {/* Main Modal Content Card */}
-            <motion.div
+            <m.div
               initial={{ scale: 0.95, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 20 }}
@@ -211,7 +211,7 @@ const itemVariants: Variants = {
                   src={selectedImage.src}
                   alt={selectedImage.title}
                   fill
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, 66vw"
                   className="object-contain"
                   priority
                 />
@@ -236,7 +236,7 @@ const itemVariants: Variants = {
                   <span className="text-yellow-400/80 font-medium">Confident & Safe</span>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
 
             {/* Right Navigation Arrow */}
             <button
@@ -246,7 +246,7 @@ const itemVariants: Variants = {
             >
               <ChevronRight size={24} />
             </button>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </section>

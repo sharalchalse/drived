@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Star } from 'lucide-react';
 
 export default function Testimonials() {
@@ -37,7 +37,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -48,11 +48,11 @@ export default function Testimonials() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Real feedback from students who transformed their confidence
           </p>
-        </motion.div>
+        </m.div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <motion.div
+            <m.div
               key={testimonial.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export default function Testimonials() {
                 <p className="font-semibold text-black">{testimonial.name}</p>
                 <p className="text-sm text-gray-600">{testimonial.role}</p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

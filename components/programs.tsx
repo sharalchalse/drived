@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Check } from 'lucide-react';
 const whatsappNumber = "+918169891400"; // Replace with your actual WhatsApp number
 const whatsappMessage1 ="Hi, I would like to know more about the Basic Competency Program.";
@@ -49,7 +49,7 @@ export default function Programs() {
   return (
     <section   id="programs" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -60,12 +60,12 @@ export default function Programs() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Choose the program that fits your needs and driving goals
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Constraining the grid to max-w-4xl makes the cards centered and perfectly proportioned on desktop */}
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-10">
           {programs.map((program, index) => (
-            <motion.div
+            <m.div
               key={program.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +106,7 @@ export default function Programs() {
                 <div className="space-y-4 mb-8">
                   <h4 className="font-semibold text-black text-xs uppercase tracking-wider opacity-60">Includes:</h4>
                   {program.features.map((feature, featureIndex) => (
-                    <motion.div
+                    <m.div
                       key={feature}
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -116,7 +116,7 @@ export default function Programs() {
                     >
                       <Check className="text-yellow-400 flex-shrink-0 mt-0.5" size={18} />
                       <span className="text-gray-700 text-sm leading-relaxed">{feature}</span>
-                    </motion.div>
+                    </m.div>
                   ))}
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function Programs() {
                 }`}
               >  Choose This Program
               </a>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

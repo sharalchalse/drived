@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -48,7 +48,7 @@ export default function ContactForm() {
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -59,11 +59,11 @@ export default function ContactForm() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Ready to start your driving journey? Contact us today to book your first lesson.
           </p>
-        </motion.div>
+        </m.div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Contact Info Cards */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -79,9 +79,9 @@ export default function ContactForm() {
                 +918169891400
               </a>
             </p>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
@@ -100,9 +100,9 @@ export default function ContactForm() {
                 https://drived-bice.vercel.app/
               </a>
             </p>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -123,11 +123,11 @@ export default function ContactForm() {
             </p>
             
 
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Form */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -135,7 +135,7 @@ export default function ContactForm() {
           className="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl"
         >
           {submitted ? (
-            <motion.div
+            <m.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               className="text-center py-8"
@@ -147,7 +147,7 @@ export default function ContactForm() {
               <p className="text-gray-600">
                 We&apos;ll get back to you within 24 hours.
               </p>
-            </motion.div>
+            </m.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
@@ -256,7 +256,7 @@ export default function ContactForm() {
               </button>
             </form>
           )}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

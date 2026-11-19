@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import Image from 'next/image';
 
@@ -85,7 +85,7 @@ export default function VideoGallery() {
     <section className="py-16 md:py-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -101,10 +101,10 @@ export default function VideoGallery() {
           <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
             Real lessons, real students — watch the DrivEd experience come to life.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Grid */}
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -112,7 +112,7 @@ export default function VideoGallery() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {videos.map((video, index) => (
-            <motion.div
+            <m.div
               key={video.id}
               variants={itemVariants}
               onClick={() => handleOpen(index)}
@@ -151,15 +151,15 @@ export default function VideoGallery() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
 
       {/* ── Modal Player ── */}
       <AnimatePresence>
         {selectedVideo && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -185,7 +185,7 @@ export default function VideoGallery() {
             </button>
 
             {/* Card */}
-            <motion.div
+            <m.div
               initial={{ scale: 0.95, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 20 }}
@@ -224,7 +224,7 @@ export default function VideoGallery() {
                   <span className="text-yellow-400/80 font-medium">Confident &amp; Safe</span>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
 
             {/* Next */}
             <button
@@ -234,7 +234,7 @@ export default function VideoGallery() {
             >
               <ChevronRight size={24} />
             </button>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </section>

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   Car,
   Clock,
@@ -67,7 +67,7 @@ export default function WhyChoose() {
   return (
     <section id="why-choose" className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -84,9 +84,9 @@ export default function WhyChoose() {
   is something that is not taught in most places, and most people learn about it
   too late. Our focus at DrivEd is making you a Defensive Driver.
 </p>
-        </motion.div>
+        </m.div>
 
-        <motion.div
+        <m.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -96,7 +96,7 @@ export default function WhyChoose() {
           {reasons.map((reason, index) => {
             const Icon = reason.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 variants={itemVariants}
                 className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all group"
@@ -106,10 +106,10 @@ export default function WhyChoose() {
                 </div>
                 <h3 className="text-xl font-bold text-black mb-2">{reason.title}</h3>
                 <p className="text-gray-600">{reason.description}</p>
-              </motion.div>
+              </m.div>
             );
           })}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const whatsappNumber = "+918169891400"; // Replace with your actual WhatsApp number
@@ -29,7 +28,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="#" className="flex items-center">
+          <Link href="#" className="flex items-center" aria-label="DrivEd home">
             <span className="text-2xl font-bold text-black">Driv</span>
             <span className="text-2xl font-bold text-yellow-400">Ed</span>
           </Link>
@@ -64,7 +63,8 @@ export default function Navbar() {
           <button
             className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -84,9 +84,15 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <button className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition-colors w-full">
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition-colors w-full text-center"
+              >
                 Book a Session
-              </button>
+              </a>
             </div>
           </div>
         )}

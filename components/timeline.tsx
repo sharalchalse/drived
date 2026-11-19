@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export default function Timeline() {
   const steps = [
@@ -39,7 +39,7 @@ export default function Timeline() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -50,7 +50,7 @@ export default function Timeline() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             A structured path from beginner to confident driver
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Timeline */}
         <div className="relative">
@@ -59,7 +59,7 @@ export default function Timeline() {
 
           <div className="space-y-12 md:space-y-16">
             {steps.map((step, index) => (
-              <motion.div
+              <m.div
                 key={step.number}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ export default function Timeline() {
 
                 {/* Empty space for alignment */}
                 <div className="flex-1 hidden md:block"></div>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </div>
